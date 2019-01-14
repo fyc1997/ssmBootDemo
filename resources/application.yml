@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+    
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+  thymeleaf:
+    cache: false
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
